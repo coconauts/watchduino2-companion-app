@@ -24,6 +24,9 @@ var processCommand = function (command, value) {
     case "tf":
           sendTflStops(value);
           break;
+    case "tw":
+          sendTwitterTimeline(value);
+          break;
     case "bt":
           log(TAG, "Battery notification "+value);
           battery.add(value);

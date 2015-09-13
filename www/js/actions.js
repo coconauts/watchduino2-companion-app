@@ -1,8 +1,23 @@
-var sendTwitterTimeline = function(){
-  twitter.homeTimeline(function(timeline) {
-      log(TAG, "Timeline " +JSON.stringify(timeline) );
-  });
+cachedTwitterTimeline = [];
+var sendTwitterTimeline = function(position){
+
+  if (position && cachedTwitterTimeline.length > position) {
+    sendTweet(cachedTwitterTimeline[position]);
+  } else {
+    twitter.homeTimeline(function(timeline) {
+        drawChat("info", "Got " + timeline.length + " tweets from Twitter");
+        cachedTwitterTimeline = timeline;
+        sendTweet(cachedTwitterTimeline[0]);
+    });
+  }
 };
+
+//Parse and send tweet
+var sendTweet = function(tweet) {
+  console.log("tweet "+JSON.stringify(tweet));
+  var tweet = tweet.user.name +"\n"+ tweet.text;
+  bt.send("!tw:"+tweet );
+}
 
 var sendTime = function(){
   var date = new Date();
