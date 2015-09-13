@@ -28,6 +28,10 @@ $("#bt-connect").click(function(){
 
   bt.connect();
 });
+$("#bt-disconnect").click(function(){
+
+  bt.disconnect();
+});
 $("#bt-scan").click(function(){
 
   bt.scan();

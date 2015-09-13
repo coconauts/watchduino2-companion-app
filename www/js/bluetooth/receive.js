@@ -15,6 +15,9 @@ var onReceive = function(msg){
 var processCommand = function (command, value) {
   log(TAG, "Command " +command + " value " + value);
   switch(command) {
+    case "pg":
+        console.log("Received pong");
+        break;
     case "tm":
         sendTime();
         break;
@@ -31,6 +34,9 @@ var processCommand = function (command, value) {
           log(TAG, "Battery notification "+value);
           battery.add(value);
           break;
+    case "sl":
+          log(TAG, "Disconnecting on sleep");
+          bt.disconnect();
     default:
       log(TAG, "Unrecognized command: "+command, "error");
     }
