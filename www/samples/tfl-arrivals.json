@@ -1,0 +1,49 @@
+[
+
+{
+
+    "$type": "Tfl.Api.Presentation.Entities.Prediction, Tfl.Api.Presentation.Entities",
+    "id": "-927828445",
+    "operationType": 1,
+    "vehicleId": "LTZ1106",
+    "naptanId": "490019520D",
+    "stationName": "York Way / Kings Place",
+    "lineId": "390",
+    "lineName": "390",
+    "platformName": "D",
+    "direction": "inbound",
+    "destinationNaptanId": "",
+    "destinationName": "Archway",
+    "timestamp": "2015-07-22T14:10:22.752Z",
+    "timeToStation": 1381,
+    "currentLocation": "",
+    "towards": "Archway",
+    "expectedArrival": "2015-07-22T14:33:24Z",
+    "timeToLive": "2015-07-22T14:33:24Z",
+    "modeName": "bus"
+
+},
+
+    {
+        "$type": "Tfl.Api.Presentation.Entities.Prediction, Tfl.Api.Presentation.Entities",
+        "id": "-1436947570",
+        "operationType": 1,
+        "vehicleId": "LTZ1107",
+        "naptanId": "490019520D",
+        "stationName": "York Way / Kings Place",
+        "lineId": "390",
+        "lineName": "390",
+        "platformName": "D",
+        "direction": "inbound",
+        "destinationNaptanId": "",
+        "destinationName": "Archway",
+        "timestamp": "2015-07-22T14:10:12.737Z",
+        "timeToStation": 1223,
+        "currentLocation": "",
+        "towards": "Archway",
+        "expectedArrival": "2015-07-22T14:30:36Z",
+        "timeToLive": "2015-07-22T14:30:36Z",
+        "modeName": "bus"
+    }
+
+]

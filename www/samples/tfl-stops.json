@@ -1,0 +1,1221 @@
+{
+    "$type": "Tfl.Api.Presentation.Entities.StopPointsResponse, Tfl.Api.Presentation.Entities",
+    "centrePoint": [
+        51.511,
+        -0.135
+    ],
+    "stopPoints": [
+        {
+            "$type": "Tfl.Api.Presentation.Entities.StopPoint, Tfl.Api.Presentation.Entities",
+            "naptanId": "490015185H",
+            "indicator": "Stop H",
+            "stopLetter": "H",
+            "modes": [
+                "bus"
+            ],
+            "bikePoints": [],
+            "icsCode": "1011791",
+            "stopType": "NaptanPublicBusCoachTram",
+            "stationNaptan": "490015185H",
+            "lines": [
+                {
+                    "$type": "Tfl.Api.Presentation.Entities.Identifier, Tfl.Api.Presentation.Entities",
+                    "id": "14",
+                    "name": "14",
+                    "uri": "/Line/14",
+                    "type": "Line"
+                },
+                {
+                    "$type": "Tfl.Api.Presentation.Entities.Identifier, Tfl.Api.Presentation.Entities",
+                    "id": "19",
+                    "name": "19",
+                    "uri": "/Line/19",
+                    "type": "Line"
+                },
+                {
+                    "$type": "Tfl.Api.Presentation.Entities.Identifier, Tfl.Api.Presentation.Entities",
+                    "id": "38",
+                    "name": "38",
+                    "uri": "/Line/38",
+                    "type": "Line"
+                },
+                {
+                    "$type": "Tfl.Api.Presentation.Entities.Identifier, Tfl.Api.Presentation.Entities",
+                    "id": "n19",
+                    "name": "N19",
+                    "uri": "/Line/n19",
+                    "type": "Line"
+                },
+                {
+                    "$type": "Tfl.Api.Presentation.Entities.Identifier, Tfl.Api.Presentation.Entities",
+                    "id": "n38",
+                    "name": "N38",
+                    "uri": "/Line/n38",
+                    "type": "Line"
+                }
+            ],
+            "lineGroup": [
+                {
+                    "$type": "Tfl.Api.Presentation.Entities.LineGroup, Tfl.Api.Presentation.Entities",
+                    "naptanIdReference": "490015185H",
+                    "stationAtcoCode": "490015185H",
+                    "lineIdentifier": [
+                        "14",
+                        "19",
+                        "38",
+                        "n19",
+                        "n38"
+                    ]
+                }
+            ],
+            "lineModeGroups": [
+                {
+                    "$type": "Tfl.Api.Presentation.Entities.LineModeGroup, Tfl.Api.Presentation.Entities",
+                    "modeName": "bus",
+                    "lineIdentifier": [
+                        "14",
+                        "19",
+                        "38",
+                        "n19",
+                        "n38"
+                    ]
+                }
+            ],
+            "id": "490015185H",
+            "commonName": "Trocadero / Haymarket",
+            "distance": 71.82488608154024,
+            "placeType": "StopPoint",
+            "additionalProperties": [
+                {
+                    "$type": "Tfl.Api.Presentation.Entities.AdditionalProperties, Tfl.Api.Presentation.Entities",
+                    "category": "Direction",
+                    "key": "CompassPoint",
+                    "sourceSystemKey": "Naptan490",
+                    "value": "N"
+                },
+                {
+                    "$type": "Tfl.Api.Presentation.Entities.AdditionalProperties, Tfl.Api.Presentation.Entities",
+                    "category": "Direction",
+                    "key": "Towards",
+                    "sourceSystemKey": "CountDown",
+                    "value": "Holborn or Warren Street Station"
+                }
+            ],
+            "children": [],
+            "lat": 51.510609,
+            "lon": -0.134175
+        },
+        {
+            "$type": "Tfl.Api.Presentation.Entities.StopPoint, Tfl.Api.Presentation.Entities",
+            "naptanId": "490000179G",
+            "indicator": "Stop G",
+            "stopLetter": "G",
+            "modes": [
+                "bus"
+            ],
+            "bikePoints": [],
+            "icsCode": "1000179",
+            "stopType": "NaptanPublicBusCoachTram",
+            "stationNaptan": "490000179G",
+            "lines": [
+                {
+                    "$type": "Tfl.Api.Presentation.Entities.Identifier, Tfl.Api.Presentation.Entities",
+                    "id": "13",
+                    "name": "13",
+                    "uri": "/Line/13",
+                    "type": "Line"
+                },
+                {
+                    "$type": "Tfl.Api.Presentation.Entities.Identifier, Tfl.Api.Presentation.Entities",
+                    "id": "139",
+                    "name": "139",
+                    "uri": "/Line/139",
+                    "type": "Line"
+                },
+                {
+                    "$type": "Tfl.Api.Presentation.Entities.Identifier, Tfl.Api.Presentation.Entities",
+                    "id": "23",
+                    "name": "23",
+                    "uri": "/Line/23",
+                    "type": "Line"
+                },
+                {
+                    "$type": "Tfl.Api.Presentation.Entities.Identifier, Tfl.Api.Presentation.Entities",
+                    "id": "6",
+                    "name": "6",
+                    "uri": "/Line/6",
+                    "type": "Line"
+                },
+                {
+                    "$type": "Tfl.Api.Presentation.Entities.Identifier, Tfl.Api.Presentation.Entities",
+                    "id": "n113",
+                    "name": "N113",
+                    "uri": "/Line/n113",
+                    "type": "Line"
+                },
+                {
+                    "$type": "Tfl.Api.Presentation.Entities.Identifier, Tfl.Api.Presentation.Entities",
+                    "id": "n13",
+                    "name": "N13",
+                    "uri": "/Line/n13",
+                    "type": "Line"
+                },
+                {
+                    "$type": "Tfl.Api.Presentation.Entities.Identifier, Tfl.Api.Presentation.Entities",
+                    "id": "n18",
+                    "name": "N18",
+                    "uri": "/Line/n18",
+                    "type": "Line"
+                }
+            ],
+            "lineGroup": [
+                {
+                    "$type": "Tfl.Api.Presentation.Entities.LineGroup, Tfl.Api.Presentation.Entities",
+                    "naptanIdReference": "490000179G",
+                    "stationAtcoCode": "490000179G",
+                    "lineIdentifier": [
+                        "13",
+                        "139",
+                        "23",
+                        "6",
+                        "n113",
+                        "n13",
+                        "n18"
+                    ]
+                }
+            ],
+            "lineModeGroups": [
+                {
+                    "$type": "Tfl.Api.Presentation.Entities.LineModeGroup, Tfl.Api.Presentation.Entities",
+                    "modeName": "bus",
+                    "lineIdentifier": [
+                        "13",
+                        "139",
+                        "23",
+                        "6",
+                        "n113",
+                        "n13",
+                        "n18"
+                    ]
+                }
+            ],
+            "id": "490000179G",
+            "commonName": "Piccadilly Circus",
+            "distance": 111.19702917086819,
+            "placeType": "StopPoint",
+            "additionalProperties": [
+                {
+                    "$type": "Tfl.Api.Presentation.Entities.AdditionalProperties, Tfl.Api.Presentation.Entities",
+                    "category": "Direction",
+                    "key": "CompassPoint",
+                    "sourceSystemKey": "Naptan490",
+                    "value": "E"
+                },
+                {
+                    "$type": "Tfl.Api.Presentation.Entities.AdditionalProperties, Tfl.Api.Presentation.Entities",
+                    "category": "Direction",
+                    "key": "Towards",
+                    "sourceSystemKey": "CountDown",
+                    "value": "Aldwych"
+                },
+                {
+                    "$type": "Tfl.Api.Presentation.Entities.AdditionalProperties, Tfl.Api.Presentation.Entities",
+                    "category": "Facility",
+                    "key": "Euro Cash Machines",
+                    "sourceSystemKey": "StaticObjects",
+                    "value": "yes"
+                },
+                {
+                    "$type": "Tfl.Api.Presentation.Entities.AdditionalProperties, Tfl.Api.Presentation.Entities",
+                    "category": "Facility",
+                    "key": "Lifts",
+                    "sourceSystemKey": "StaticObjects",
+                    "value": "0"
+                },
+                {
+                    "$type": "Tfl.Api.Presentation.Entities.AdditionalProperties, Tfl.Api.Presentation.Entities",
+                    "category": "Facility",
+                    "key": "Escalators",
+                    "sourceSystemKey": "StaticObjects",
+                    "value": "11"
+                },
+                {
+                    "$type": "Tfl.Api.Presentation.Entities.AdditionalProperties, Tfl.Api.Presentation.Entities",
+                    "category": "Facility",
+                    "key": "Gates",
+                    "sourceSystemKey": "StaticObjects",
+                    "value": "16"
+                },
+                {
+                    "$type": "Tfl.Api.Presentation.Entities.AdditionalProperties, Tfl.Api.Presentation.Entities",
+                    "category": "Address",
+                    "key": "PhoneNo",
+                    "sourceSystemKey": "StaticObjects",
+                    "value": "0845 330 9880"
+                },
+                {
+                    "$type": "Tfl.Api.Presentation.Entities.AdditionalProperties, Tfl.Api.Presentation.Entities",
+                    "category": "Facility",
+                    "key": "Photo Booths",
+                    "sourceSystemKey": "StaticObjects",
+                    "value": "0"
+                },
+                {
+                    "$type": "Tfl.Api.Presentation.Entities.AdditionalProperties, Tfl.Api.Presentation.Entities",
+                    "category": "Facility",
+                    "key": "WiFi",
+                    "sourceSystemKey": "StaticObjects",
+                    "value": "yes"
+                },
+                {
+                    "$type": "Tfl.Api.Presentation.Entities.AdditionalProperties, Tfl.Api.Presentation.Entities",
+                    "category": "Geo",
+                    "key": "Zone",
+                    "sourceSystemKey": "StaticObjects",
+                    "value": "1"
+                },
+                {
+                    "$type": "Tfl.Api.Presentation.Entities.AdditionalProperties, Tfl.Api.Presentation.Entities",
+                    "category": "Facility",
+                    "key": "Cash Machines",
+                    "sourceSystemKey": "StaticObjects",
+                    "value": "5"
+                },
+                {
+                    "$type": "Tfl.Api.Presentation.Entities.AdditionalProperties, Tfl.Api.Presentation.Entities",
+                    "category": "Facility",
+                    "key": "Other Facilities",
+                    "sourceSystemKey": "StaticObjects",
+                    "value": "subway to street, routeways platform to ticket hall."
+                },
+                {
+                    "$type": "Tfl.Api.Presentation.Entities.AdditionalProperties, Tfl.Api.Presentation.Entities",
+                    "category": "Facility",
+                    "key": "Toilets",
+                    "sourceSystemKey": "StaticObjects",
+                    "value": "no"
+                },
+                {
+                    "$type": "Tfl.Api.Presentation.Entities.AdditionalProperties, Tfl.Api.Presentation.Entities",
+                    "category": "Facility",
+                    "key": "Help Points",
+                    "sourceSystemKey": "StaticObjects",
+                    "value": "0 on platforms, 0 in ticket halls, 0 elsewhere"
+                },
+                {
+                    "$type": "Tfl.Api.Presentation.Entities.AdditionalProperties, Tfl.Api.Presentation.Entities",
+                    "category": "Facility",
+                    "key": "Waiting Room",
+                    "sourceSystemKey": "StaticObjects",
+                    "value": "no"
+                },
+                {
+                    "$type": "Tfl.Api.Presentation.Entities.AdditionalProperties, Tfl.Api.Presentation.Entities",
+                    "category": "Address",
+                    "key": "Address",
+                    "sourceSystemKey": "StaticObjects",
+                    "value": "Piccadilly Circus Station,London Underground Ltd.,Piccadilly Circus,London,W1J 9HP"
+                },
+                {
+                    "$type": "Tfl.Api.Presentation.Entities.AdditionalProperties, Tfl.Api.Presentation.Entities",
+                    "category": "Facility",
+                    "key": "Car park",
+                    "sourceSystemKey": "StaticObjects",
+                    "value": "no"
+                },
+                {
+                    "$type": "Tfl.Api.Presentation.Entities.AdditionalProperties, Tfl.Api.Presentation.Entities",
+                    "category": "Facility",
+                    "key": "Bridge",
+                    "sourceSystemKey": "StaticObjects",
+                    "value": "no"
+                },
+                {
+                    "$type": "Tfl.Api.Presentation.Entities.AdditionalProperties, Tfl.Api.Presentation.Entities",
+                    "category": "Facility",
+                    "key": "Payphones",
+                    "sourceSystemKey": "StaticObjects",
+                    "value": "6"
+                },
+                {
+                    "$type": "Tfl.Api.Presentation.Entities.AdditionalProperties, Tfl.Api.Presentation.Entities",
+                    "category": "Facility",
+                    "key": "Ticket Halls",
+                    "sourceSystemKey": "StaticObjects",
+                    "value": "1"
+                }
+            ],
+            "children": [],
+            "lat": 51.510065,
+            "lon": -0.135566
+        },
+        {
+            "$type": "Tfl.Api.Presentation.Entities.StopPoint, Tfl.Api.Presentation.Entities",
+            "naptanId": "490011791K",
+            "indicator": "Stop K",
+            "stopLetter": "K",
+            "modes": [
+                "bus"
+            ],
+            "bikePoints": [],
+            "icsCode": "1011791",
+            "stopType": "NaptanPublicBusCoachTram",
+            "stationNaptan": "490011791K",
+            "lines": [
+                {
+                    "$type": "Tfl.Api.Presentation.Entities.Identifier, Tfl.Api.Presentation.Entities",
+                    "id": "14",
+                    "name": "14",
+                    "uri": "/Line/14",
+                    "type": "Line"
+                },
+                {
+                    "$type": "Tfl.Api.Presentation.Entities.Identifier, Tfl.Api.Presentation.Entities",
+                    "id": "19",
+                    "name": "19",
+                    "uri": "/Line/19",
+                    "type": "Line"
+                },
+                {
+                    "$type": "Tfl.Api.Presentation.Entities.Identifier, Tfl.Api.Presentation.Entities",
+                    "id": "38",
+                    "name": "38",
+                    "uri": "/Line/38",
+                    "type": "Line"
+                },
+                {
+                    "$type": "Tfl.Api.Presentation.Entities.Identifier, Tfl.Api.Presentation.Entities",
+                    "id": "n19",
+                    "name": "N19",
+                    "uri": "/Line/n19",
+                    "type": "Line"
+                },
+                {
+                    "$type": "Tfl.Api.Presentation.Entities.Identifier, Tfl.Api.Presentation.Entities",
+                    "id": "n38",
+                    "name": "N38",
+                    "uri": "/Line/n38",
+                    "type": "Line"
+                }
+            ],
+            "lineGroup": [
+                {
+                    "$type": "Tfl.Api.Presentation.Entities.LineGroup, Tfl.Api.Presentation.Entities",
+                    "naptanIdReference": "490011791K",
+                    "stationAtcoCode": "490011791K",
+                    "lineIdentifier": [
+                        "14",
+                        "19",
+                        "38",
+                        "n19",
+                        "n38"
+                    ]
+                }
+            ],
+            "lineModeGroups": [
+                {
+                    "$type": "Tfl.Api.Presentation.Entities.LineModeGroup, Tfl.Api.Presentation.Entities",
+                    "modeName": "bus",
+                    "lineIdentifier": [
+                        "14",
+                        "19",
+                        "38",
+                        "n19",
+                        "n38"
+                    ]
+                }
+            ],
+            "id": "490011791K",
+            "commonName": "Trocadero / Haymarket",
+            "distance": 117.22646996110582,
+            "placeType": "StopPoint",
+            "additionalProperties": [
+                {
+                    "$type": "Tfl.Api.Presentation.Entities.AdditionalProperties, Tfl.Api.Presentation.Entities",
+                    "category": "Direction",
+                    "key": "CompassPoint",
+                    "sourceSystemKey": "Naptan490",
+                    "value": "W"
+                },
+                {
+                    "$type": "Tfl.Api.Presentation.Entities.AdditionalProperties, Tfl.Api.Presentation.Entities",
+                    "category": "Direction",
+                    "key": "Towards",
+                    "sourceSystemKey": "CountDown",
+                    "value": "Hyde Park Corner"
+                }
+            ],
+            "children": [],
+            "lat": 51.511117,
+            "lon": -0.133318
+        },
+        {
+            "$type": "Tfl.Api.Presentation.Entities.StopPoint, Tfl.Api.Presentation.Entities",
+            "naptanId": "490000179C",
+            "indicator": "Stop C",
+            "stopLetter": "C",
+            "modes": [
+                "bus"
+            ],
+            "bikePoints": [],
+            "icsCode": "1000179",
+            "stopType": "NaptanPublicBusCoachTram",
+            "stationNaptan": "490000179C",
+            "lines": [
+                {
+                    "$type": "Tfl.Api.Presentation.Entities.Identifier, Tfl.Api.Presentation.Entities",
+                    "id": "13",
+                    "name": "13",
+                    "uri": "/Line/13",
+                    "type": "Line"
+                },
+                {
+                    "$type": "Tfl.Api.Presentation.Entities.Identifier, Tfl.Api.Presentation.Entities",
+                    "id": "139",
+                    "name": "139",
+                    "uri": "/Line/139",
+                    "type": "Line"
+                },
+                {
+                    "$type": "Tfl.Api.Presentation.Entities.Identifier, Tfl.Api.Presentation.Entities",
+                    "id": "n113",
+                    "name": "N113",
+                    "uri": "/Line/n113",
+                    "type": "Line"
+                },
+                {
+                    "$type": "Tfl.Api.Presentation.Entities.Identifier, Tfl.Api.Presentation.Entities",
+                    "id": "n13",
+                    "name": "N13",
+                    "uri": "/Line/n13",
+                    "type": "Line"
+                }
+            ],
+            "lineGroup": [
+                {
+                    "$type": "Tfl.Api.Presentation.Entities.LineGroup, Tfl.Api.Presentation.Entities",
+                    "naptanIdReference": "490000179C",
+                    "stationAtcoCode": "490000179C",
+                    "lineIdentifier": [
+                        "13",
+                        "139",
+                        "n113",
+                        "n13"
+                    ]
+                }
+            ],
+            "lineModeGroups": [
+                {
+                    "$type": "Tfl.Api.Presentation.Entities.LineModeGroup, Tfl.Api.Presentation.Entities",
+                    "modeName": "bus",
+                    "lineIdentifier": [
+                        "13",
+                        "139",
+                        "n113",
+                        "n13"
+                    ]
+                }
+            ],
+            "id": "490000179C",
+            "commonName": "Piccadilly Circus",
+            "distance": 142.41802659205445,
+            "placeType": "StopPoint",
+            "additionalProperties": [
+                {
+                    "$type": "Tfl.Api.Presentation.Entities.AdditionalProperties, Tfl.Api.Presentation.Entities",
+                    "category": "Direction",
+                    "key": "CompassPoint",
+                    "sourceSystemKey": "Naptan490",
+                    "value": "N"
+                },
+                {
+                    "$type": "Tfl.Api.Presentation.Entities.AdditionalProperties, Tfl.Api.Presentation.Entities",
+                    "category": "Direction",
+                    "key": "Towards",
+                    "sourceSystemKey": "CountDown",
+                    "value": "Oxford Circus and Marylebone"
+                },
+                {
+                    "$type": "Tfl.Api.Presentation.Entities.AdditionalProperties, Tfl.Api.Presentation.Entities",
+                    "category": "Facility",
+                    "key": "Other Facilities",
+                    "sourceSystemKey": "StaticObjects",
+                    "value": "subway to street, routeways platform to ticket hall."
+                },
+                {
+                    "$type": "Tfl.Api.Presentation.Entities.AdditionalProperties, Tfl.Api.Presentation.Entities",
+                    "category": "Facility",
+                    "key": "Photo Booths",
+                    "sourceSystemKey": "StaticObjects",
+                    "value": "0"
+                },
+                {
+                    "$type": "Tfl.Api.Presentation.Entities.AdditionalProperties, Tfl.Api.Presentation.Entities",
+                    "category": "Facility",
+                    "key": "Cash Machines",
+                    "sourceSystemKey": "StaticObjects",
+                    "value": "5"
+                },
+                {
+                    "$type": "Tfl.Api.Presentation.Entities.AdditionalProperties, Tfl.Api.Presentation.Entities",
+                    "category": "Facility",
+                    "key": "Toilets",
+                    "sourceSystemKey": "StaticObjects",
+                    "value": "no"
+                },
+                {
+                    "$type": "Tfl.Api.Presentation.Entities.AdditionalProperties, Tfl.Api.Presentation.Entities",
+                    "category": "Facility",
+                    "key": "WiFi",
+                    "sourceSystemKey": "StaticObjects",
+                    "value": "yes"
+                },
+                {
+                    "$type": "Tfl.Api.Presentation.Entities.AdditionalProperties, Tfl.Api.Presentation.Entities",
+                    "category": "Geo",
+                    "key": "Zone",
+                    "sourceSystemKey": "StaticObjects",
+                    "value": "1"
+                },
+                {
+                    "$type": "Tfl.Api.Presentation.Entities.AdditionalProperties, Tfl.Api.Presentation.Entities",
+                    "category": "Facility",
+                    "key": "Gates",
+                    "sourceSystemKey": "StaticObjects",
+                    "value": "16"
+                },
+                {
+                    "$type": "Tfl.Api.Presentation.Entities.AdditionalProperties, Tfl.Api.Presentation.Entities",
+                    "category": "Facility",
+                    "key": "Escalators",
+                    "sourceSystemKey": "StaticObjects",
+                    "value": "11"
+                },
+                {
+                    "$type": "Tfl.Api.Presentation.Entities.AdditionalProperties, Tfl.Api.Presentation.Entities",
+                    "category": "Facility",
+                    "key": "Euro Cash Machines",
+                    "sourceSystemKey": "StaticObjects",
+                    "value": "yes"
+                },
+                {
+                    "$type": "Tfl.Api.Presentation.Entities.AdditionalProperties, Tfl.Api.Presentation.Entities",
+                    "category": "Facility",
+                    "key": "Lifts",
+                    "sourceSystemKey": "StaticObjects",
+                    "value": "0"
+                },
+                {
+                    "$type": "Tfl.Api.Presentation.Entities.AdditionalProperties, Tfl.Api.Presentation.Entities",
+                    "category": "Facility",
+                    "key": "Payphones",
+                    "sourceSystemKey": "StaticObjects",
+                    "value": "6"
+                },
+                {
+                    "$type": "Tfl.Api.Presentation.Entities.AdditionalProperties, Tfl.Api.Presentation.Entities",
+                    "category": "Facility",
+                    "key": "Ticket Halls",
+                    "sourceSystemKey": "StaticObjects",
+                    "value": "1"
+                },
+                {
+                    "$type": "Tfl.Api.Presentation.Entities.AdditionalProperties, Tfl.Api.Presentation.Entities",
+                    "category": "Address",
+                    "key": "PhoneNo",
+                    "sourceSystemKey": "StaticObjects",
+                    "value": "0845 330 9880"
+                },
+                {
+                    "$type": "Tfl.Api.Presentation.Entities.AdditionalProperties, Tfl.Api.Presentation.Entities",
+                    "category": "Address",
+                    "key": "Address",
+                    "sourceSystemKey": "StaticObjects",
+                    "value": "Piccadilly Circus Station,London Underground Ltd.,Piccadilly Circus,London,W1J 9HP"
+                },
+                {
+                    "$type": "Tfl.Api.Presentation.Entities.AdditionalProperties, Tfl.Api.Presentation.Entities",
+                    "category": "Facility",
+                    "key": "Bridge",
+                    "sourceSystemKey": "StaticObjects",
+                    "value": "no"
+                },
+                {
+                    "$type": "Tfl.Api.Presentation.Entities.AdditionalProperties, Tfl.Api.Presentation.Entities",
+                    "category": "Facility",
+                    "key": "Car park",
+                    "sourceSystemKey": "StaticObjects",
+                    "value": "no"
+                },
+                {
+                    "$type": "Tfl.Api.Presentation.Entities.AdditionalProperties, Tfl.Api.Presentation.Entities",
+                    "category": "Facility",
+                    "key": "Waiting Room",
+                    "sourceSystemKey": "StaticObjects",
+                    "value": "no"
+                },
+                {
+                    "$type": "Tfl.Api.Presentation.Entities.AdditionalProperties, Tfl.Api.Presentation.Entities",
+                    "category": "Facility",
+                    "key": "Help Points",
+                    "sourceSystemKey": "StaticObjects",
+                    "value": "0 on platforms, 0 in ticket halls, 0 elsewhere"
+                }
+            ],
+            "children": [],
+            "lat": 51.509874,
+            "lon": -0.135977
+        },
+        {
+            "$type": "Tfl.Api.Presentation.Entities.StopPoint, Tfl.Api.Presentation.Entities",
+            "naptanId": "490000179F",
+            "indicator": "Stop F",
+            "stopLetter": "F",
+            "modes": [
+                "bus"
+            ],
+            "bikePoints": [],
+            "icsCode": "1000179",
+            "stopType": "NaptanPublicBusCoachTram",
+            "stationNaptan": "490000179F",
+            "lines": [
+                {
+                    "$type": "Tfl.Api.Presentation.Entities.Identifier, Tfl.Api.Presentation.Entities",
+                    "id": "12",
+                    "name": "12",
+                    "uri": "/Line/12",
+                    "type": "Line"
+                },
+                {
+                    "$type": "Tfl.Api.Presentation.Entities.Identifier, Tfl.Api.Presentation.Entities",
+                    "id": "159",
+                    "name": "159",
+                    "uri": "/Line/159",
+                    "type": "Line"
+                },
+                {
+                    "$type": "Tfl.Api.Presentation.Entities.Identifier, Tfl.Api.Presentation.Entities",
+                    "id": "3",
+                    "name": "3",
+                    "uri": "/Line/3",
+                    "type": "Line"
+                },
+                {
+                    "$type": "Tfl.Api.Presentation.Entities.Identifier, Tfl.Api.Presentation.Entities",
+                    "id": "453",
+                    "name": "453",
+                    "uri": "/Line/453",
+                    "type": "Line"
+                },
+                {
+                    "$type": "Tfl.Api.Presentation.Entities.Identifier, Tfl.Api.Presentation.Entities",
+                    "id": "88",
+                    "name": "88",
+                    "uri": "/Line/88",
+                    "type": "Line"
+                },
+                {
+                    "$type": "Tfl.Api.Presentation.Entities.Identifier, Tfl.Api.Presentation.Entities",
+                    "id": "94",
+                    "name": "94",
+                    "uri": "/Line/94",
+                    "type": "Line"
+                },
+                {
+                    "$type": "Tfl.Api.Presentation.Entities.Identifier, Tfl.Api.Presentation.Entities",
+                    "id": "n109",
+                    "name": "N109",
+                    "uri": "/Line/n109",
+                    "type": "Line"
+                },
+                {
+                    "$type": "Tfl.Api.Presentation.Entities.Identifier, Tfl.Api.Presentation.Entities",
+                    "id": "n136",
+                    "name": "N136",
+                    "uri": "/Line/n136",
+                    "type": "Line"
+                },
+                {
+                    "$type": "Tfl.Api.Presentation.Entities.Identifier, Tfl.Api.Presentation.Entities",
+                    "id": "n3",
+                    "name": "N3",
+                    "uri": "/Line/n3",
+                    "type": "Line"
+                }
+            ],
+            "lineGroup": [
+                {
+                    "$type": "Tfl.Api.Presentation.Entities.LineGroup, Tfl.Api.Presentation.Entities",
+                    "naptanIdReference": "490000179F",
+                    "stationAtcoCode": "490000179F",
+                    "lineIdentifier": [
+                        "12",
+                        "159",
+                        "3",
+                        "453",
+                        "88",
+                        "94",
+                        "n109",
+                        "n136",
+                        "n3"
+                    ]
+                }
+            ],
+            "lineModeGroups": [
+                {
+                    "$type": "Tfl.Api.Presentation.Entities.LineModeGroup, Tfl.Api.Presentation.Entities",
+                    "modeName": "bus",
+                    "lineIdentifier": [
+                        "12",
+                        "159",
+                        "3",
+                        "453",
+                        "88",
+                        "94",
+                        "n109",
+                        "n136",
+                        "n3"
+                    ]
+                }
+            ],
+            "id": "490000179F",
+            "commonName": "Piccadilly Circus",
+            "distance": 156.4593231411993,
+            "placeType": "StopPoint",
+            "additionalProperties": [
+                {
+                    "$type": "Tfl.Api.Presentation.Entities.AdditionalProperties, Tfl.Api.Presentation.Entities",
+                    "category": "Direction",
+                    "key": "CompassPoint",
+                    "sourceSystemKey": "Naptan490",
+                    "value": "S"
+                },
+                {
+                    "$type": "Tfl.Api.Presentation.Entities.AdditionalProperties, Tfl.Api.Presentation.Entities",
+                    "category": "Direction",
+                    "key": "Towards",
+                    "sourceSystemKey": "CountDown",
+                    "value": "Parliament Square"
+                },
+                {
+                    "$type": "Tfl.Api.Presentation.Entities.AdditionalProperties, Tfl.Api.Presentation.Entities",
+                    "category": "Address",
+                    "key": "Address",
+                    "sourceSystemKey": "StaticObjects",
+                    "value": "Piccadilly Circus Station,London Underground Ltd.,Piccadilly Circus,London,W1J 9HP"
+                },
+                {
+                    "$type": "Tfl.Api.Presentation.Entities.AdditionalProperties, Tfl.Api.Presentation.Entities",
+                    "category": "Address",
+                    "key": "PhoneNo",
+                    "sourceSystemKey": "StaticObjects",
+                    "value": "0845 330 9880"
+                },
+                {
+                    "$type": "Tfl.Api.Presentation.Entities.AdditionalProperties, Tfl.Api.Presentation.Entities",
+                    "category": "Facility",
+                    "key": "Ticket Halls",
+                    "sourceSystemKey": "StaticObjects",
+                    "value": "1"
+                },
+                {
+                    "$type": "Tfl.Api.Presentation.Entities.AdditionalProperties, Tfl.Api.Presentation.Entities",
+                    "category": "Facility",
+                    "key": "Help Points",
+                    "sourceSystemKey": "StaticObjects",
+                    "value": "0 on platforms, 0 in ticket halls, 0 elsewhere"
+                },
+                {
+                    "$type": "Tfl.Api.Presentation.Entities.AdditionalProperties, Tfl.Api.Presentation.Entities",
+                    "category": "Facility",
+                    "key": "WiFi",
+                    "sourceSystemKey": "StaticObjects",
+                    "value": "yes"
+                },
+                {
+                    "$type": "Tfl.Api.Presentation.Entities.AdditionalProperties, Tfl.Api.Presentation.Entities",
+                    "category": "Geo",
+                    "key": "Zone",
+                    "sourceSystemKey": "StaticObjects",
+                    "value": "1"
+                },
+                {
+                    "$type": "Tfl.Api.Presentation.Entities.AdditionalProperties, Tfl.Api.Presentation.Entities",
+                    "category": "Facility",
+                    "key": "Photo Booths",
+                    "sourceSystemKey": "StaticObjects",
+                    "value": "0"
+                },
+                {
+                    "$type": "Tfl.Api.Presentation.Entities.AdditionalProperties, Tfl.Api.Presentation.Entities",
+                    "category": "Facility",
+                    "key": "Waiting Room",
+                    "sourceSystemKey": "StaticObjects",
+                    "value": "no"
+                },
+                {
+                    "$type": "Tfl.Api.Presentation.Entities.AdditionalProperties, Tfl.Api.Presentation.Entities",
+                    "category": "Facility",
+                    "key": "Cash Machines",
+                    "sourceSystemKey": "StaticObjects",
+                    "value": "5"
+                },
+                {
+                    "$type": "Tfl.Api.Presentation.Entities.AdditionalProperties, Tfl.Api.Presentation.Entities",
+                    "category": "Facility",
+                    "key": "Other Facilities",
+                    "sourceSystemKey": "StaticObjects",
+                    "value": "subway to street, routeways platform to ticket hall."
+                },
+                {
+                    "$type": "Tfl.Api.Presentation.Entities.AdditionalProperties, Tfl.Api.Presentation.Entities",
+                    "category": "Facility",
+                    "key": "Euro Cash Machines",
+                    "sourceSystemKey": "StaticObjects",
+                    "value": "yes"
+                },
+                {
+                    "$type": "Tfl.Api.Presentation.Entities.AdditionalProperties, Tfl.Api.Presentation.Entities",
+                    "category": "Facility",
+                    "key": "Lifts",
+                    "sourceSystemKey": "StaticObjects",
+                    "value": "0"
+                },
+                {
+                    "$type": "Tfl.Api.Presentation.Entities.AdditionalProperties, Tfl.Api.Presentation.Entities",
+                    "category": "Facility",
+                    "key": "Bridge",
+                    "sourceSystemKey": "StaticObjects",
+                    "value": "no"
+                },
+                {
+                    "$type": "Tfl.Api.Presentation.Entities.AdditionalProperties, Tfl.Api.Presentation.Entities",
+                    "category": "Facility",
+                    "key": "Car park",
+                    "sourceSystemKey": "StaticObjects",
+                    "value": "no"
+                },
+                {
+                    "$type": "Tfl.Api.Presentation.Entities.AdditionalProperties, Tfl.Api.Presentation.Entities",
+                    "category": "Facility",
+                    "key": "Payphones",
+                    "sourceSystemKey": "StaticObjects",
+                    "value": "6"
+                },
+                {
+                    "$type": "Tfl.Api.Presentation.Entities.AdditionalProperties, Tfl.Api.Presentation.Entities",
+                    "category": "Facility",
+                    "key": "Escalators",
+                    "sourceSystemKey": "StaticObjects",
+                    "value": "11"
+                },
+                {
+                    "$type": "Tfl.Api.Presentation.Entities.AdditionalProperties, Tfl.Api.Presentation.Entities",
+                    "category": "Facility",
+                    "key": "Gates",
+                    "sourceSystemKey": "StaticObjects",
+                    "value": "16"
+                },
+                {
+                    "$type": "Tfl.Api.Presentation.Entities.AdditionalProperties, Tfl.Api.Presentation.Entities",
+                    "category": "Facility",
+                    "key": "Toilets",
+                    "sourceSystemKey": "StaticObjects",
+                    "value": "no"
+                }
+            ],
+            "children": [],
+            "lat": 51.509945,
+            "lon": -0.136493
+        },
+        {
+            "$type": "Tfl.Api.Presentation.Entities.StopPoint, Tfl.Api.Presentation.Entities",
+            "naptanId": "490017356N",
+            "indicator": "Stop",
+            "modes": [
+                "bus"
+            ],
+            "bikePoints": [],
+            "icsCode": "1017358",
+            "stopType": "NaptanPublicBusCoachTram",
+            "stationNaptan": "490G00017358",
+            "lines": [],
+            "lineGroup": [],
+            "lineModeGroups": [],
+            "id": "490017356N",
+            "commonName": "Rupert Street",
+            "distance": 181.7230952634524,
+            "placeType": "StopPoint",
+            "additionalProperties": [
+                {
+                    "$type": "Tfl.Api.Presentation.Entities.AdditionalProperties, Tfl.Api.Presentation.Entities",
+                    "category": "Direction",
+                    "key": "CompassPoint",
+                    "sourceSystemKey": "Naptan490",
+                    "value": "N"
+                }
+            ],
+            "children": [],
+            "lat": 51.510591,
+            "lon": -0.13246
+        },
+        {
+            "$type": "Tfl.Api.Presentation.Entities.StopPoint, Tfl.Api.Presentation.Entities",
+            "naptanId": "490000179D",
+            "indicator": "Stop D",
+            "stopLetter": "D",
+            "modes": [
+                "bus"
+            ],
+            "bikePoints": [],
+            "icsCode": "1000179",
+            "stopType": "NaptanPublicBusCoachTram",
+            "stationNaptan": "490000179D",
+            "lines": [
+                {
+                    "$type": "Tfl.Api.Presentation.Entities.Identifier, Tfl.Api.Presentation.Entities",
+                    "id": "159",
+                    "name": "159",
+                    "uri": "/Line/159",
+                    "type": "Line"
+                },
+                {
+                    "$type": "Tfl.Api.Presentation.Entities.Identifier, Tfl.Api.Presentation.Entities",
+                    "id": "23",
+                    "name": "23",
+                    "uri": "/Line/23",
+                    "type": "Line"
+                },
+                {
+                    "$type": "Tfl.Api.Presentation.Entities.Identifier, Tfl.Api.Presentation.Entities",
+                    "id": "6",
+                    "name": "6",
+                    "uri": "/Line/6",
+                    "type": "Line"
+                },
+                {
+                    "$type": "Tfl.Api.Presentation.Entities.Identifier, Tfl.Api.Presentation.Entities",
+                    "id": "94",
+                    "name": "94",
+                    "uri": "/Line/94",
+                    "type": "Line"
+                },
+                {
+                    "$type": "Tfl.Api.Presentation.Entities.Identifier, Tfl.Api.Presentation.Entities",
+                    "id": "n136",
+                    "name": "N136",
+                    "uri": "/Line/n136",
+                    "type": "Line"
+                }
+            ],
+            "lineGroup": [
+                {
+                    "$type": "Tfl.Api.Presentation.Entities.LineGroup, Tfl.Api.Presentation.Entities",
+                    "naptanIdReference": "490000179D",
+                    "stationAtcoCode": "490000179D",
+                    "lineIdentifier": [
+                        "159",
+                        "23",
+                        "6",
+                        "94",
+                        "n136"
+                    ]
+                }
+            ],
+            "lineModeGroups": [
+                {
+                    "$type": "Tfl.Api.Presentation.Entities.LineModeGroup, Tfl.Api.Presentation.Entities",
+                    "modeName": "bus",
+                    "lineIdentifier": [
+                        "159",
+                        "23",
+                        "6",
+                        "94",
+                        "n136"
+                    ]
+                }
+            ],
+            "id": "490000179D",
+            "commonName": "Piccadilly Circus",
+            "distance": 186.9581703686031,
+            "placeType": "StopPoint",
+            "additionalProperties": [
+                {
+                    "$type": "Tfl.Api.Presentation.Entities.AdditionalProperties, Tfl.Api.Presentation.Entities",
+                    "category": "Direction",
+                    "key": "CompassPoint",
+                    "sourceSystemKey": "Naptan490",
+                    "value": "N"
+                },
+                {
+                    "$type": "Tfl.Api.Presentation.Entities.AdditionalProperties, Tfl.Api.Presentation.Entities",
+                    "category": "Direction",
+                    "key": "Towards",
+                    "sourceSystemKey": "CountDown",
+                    "value": "Marble Arch"
+                },
+                {
+                    "$type": "Tfl.Api.Presentation.Entities.AdditionalProperties, Tfl.Api.Presentation.Entities",
+                    "category": "Facility",
+                    "key": "Gates",
+                    "sourceSystemKey": "StaticObjects",
+                    "value": "16"
+                },
+                {
+                    "$type": "Tfl.Api.Presentation.Entities.AdditionalProperties, Tfl.Api.Presentation.Entities",
+                    "category": "Facility",
+                    "key": "Bridge",
+                    "sourceSystemKey": "StaticObjects",
+                    "value": "no"
+                },
+                {
+                    "$type": "Tfl.Api.Presentation.Entities.AdditionalProperties, Tfl.Api.Presentation.Entities",
+                    "category": "Facility",
+                    "key": "Car park",
+                    "sourceSystemKey": "StaticObjects",
+                    "value": "no"
+                },
+                {
+                    "$type": "Tfl.Api.Presentation.Entities.AdditionalProperties, Tfl.Api.Presentation.Entities",
+                    "category": "Facility",
+                    "key": "Other Facilities",
+                    "sourceSystemKey": "StaticObjects",
+                    "value": "subway to street, routeways platform to ticket hall."
+                },
+                {
+                    "$type": "Tfl.Api.Presentation.Entities.AdditionalProperties, Tfl.Api.Presentation.Entities",
+                    "category": "Facility",
+                    "key": "Ticket Halls",
+                    "sourceSystemKey": "StaticObjects",
+                    "value": "1"
+                },
+                {
+                    "$type": "Tfl.Api.Presentation.Entities.AdditionalProperties, Tfl.Api.Presentation.Entities",
+                    "category": "Facility",
+                    "key": "Toilets",
+                    "sourceSystemKey": "StaticObjects",
+                    "value": "no"
+                },
+                {
+                    "$type": "Tfl.Api.Presentation.Entities.AdditionalProperties, Tfl.Api.Presentation.Entities",
+                    "category": "Facility",
+                    "key": "Payphones",
+                    "sourceSystemKey": "StaticObjects",
+                    "value": "6"
+                },
+                {
+                    "$type": "Tfl.Api.Presentation.Entities.AdditionalProperties, Tfl.Api.Presentation.Entities",
+                    "category": "Facility",
+                    "key": "Lifts",
+                    "sourceSystemKey": "StaticObjects",
+                    "value": "0"
+                },
+                {
+                    "$type": "Tfl.Api.Presentation.Entities.AdditionalProperties, Tfl.Api.Presentation.Entities",
+                    "category": "Address",
+                    "key": "Address",
+                    "sourceSystemKey": "StaticObjects",
+                    "value": "Piccadilly Circus Station,London Underground Ltd.,Piccadilly Circus,London,W1J 9HP"
+                },
+                {
+                    "$type": "Tfl.Api.Presentation.Entities.AdditionalProperties, Tfl.Api.Presentation.Entities",
+                    "category": "Address",
+                    "key": "PhoneNo",
+                    "sourceSystemKey": "StaticObjects",
+                    "value": "0845 330 9880"
+                },
+                {
+                    "$type": "Tfl.Api.Presentation.Entities.AdditionalProperties, Tfl.Api.Presentation.Entities",
+                    "category": "Facility",
+                    "key": "Euro Cash Machines",
+                    "sourceSystemKey": "StaticObjects",
+                    "value": "yes"
+                },
+                {
+                    "$type": "Tfl.Api.Presentation.Entities.AdditionalProperties, Tfl.Api.Presentation.Entities",
+                    "category": "Facility",
+                    "key": "Cash Machines",
+                    "sourceSystemKey": "StaticObjects",
+                    "value": "5"
+                },
+                {
+                    "$type": "Tfl.Api.Presentation.Entities.AdditionalProperties, Tfl.Api.Presentation.Entities",
+                    "category": "Facility",
+                    "key": "WiFi",
+                    "sourceSystemKey": "StaticObjects",
+                    "value": "yes"
+                },
+                {
+                    "$type": "Tfl.Api.Presentation.Entities.AdditionalProperties, Tfl.Api.Presentation.Entities",
+                    "category": "Geo",
+                    "key": "Zone",
+                    "sourceSystemKey": "StaticObjects",
+                    "value": "1"
+                },
+                {
+                    "$type": "Tfl.Api.Presentation.Entities.AdditionalProperties, Tfl.Api.Presentation.Entities",
+                    "category": "Facility",
+                    "key": "Photo Booths",
+                    "sourceSystemKey": "StaticObjects",
+                    "value": "0"
+                },
+                {
+                    "$type": "Tfl.Api.Presentation.Entities.AdditionalProperties, Tfl.Api.Presentation.Entities",
+                    "category": "Facility",
+                    "key": "Waiting Room",
+                    "sourceSystemKey": "StaticObjects",
+                    "value": "no"
+                },
+                {
+                    "$type": "Tfl.Api.Presentation.Entities.AdditionalProperties, Tfl.Api.Presentation.Entities",
+                    "category": "Facility",
+                    "key": "Escalators",
+                    "sourceSystemKey": "StaticObjects",
+                    "value": "11"
+                },
+                {
+                    "$type": "Tfl.Api.Presentation.Entities.AdditionalProperties, Tfl.Api.Presentation.Entities",
+                    "category": "Facility",
+                    "key": "Help Points",
+                    "sourceSystemKey": "StaticObjects",
+                    "value": "0 on platforms, 0 in ticket halls, 0 elsewhere"
+                }
+            ],
+            "children": [],
+            "lat": 51.509863,
+            "lon": -0.136987
+        },
+        {
+            "$type": "Tfl.Api.Presentation.Entities.StopPoint, Tfl.Api.Presentation.Entities",
+            "naptanId": "49007960S1",
+            "indicator": "Stop M",
+            "stopLetter": "M",
+            "modes": [
+                "bus"
+            ],
+            "bikePoints": [],
+            "icsCode": "1019889",
+            "stopType": "NaptanPublicBusCoachTram",
+            "stationNaptan": "49007960S1",
+            "lines": [],
+            "lineGroup": [],
+            "lineModeGroups": [],
+            "id": "49007960S1",
+            "commonName": "Piccadilly Circus Stn  / Haymarket",
+            "distance": 195.58575474515044,
+            "placeType": "StopPoint",
+            "additionalProperties": [
+                {
+                    "$type": "Tfl.Api.Presentation.Entities.AdditionalProperties, Tfl.Api.Presentation.Entities",
+                    "category": "Direction",
+                    "key": "CompassPoint",
+                    "sourceSystemKey": "Naptan490",
+                    "value": "S"
+                }
+            ],
+            "children": [],
+            "lat": 51.509798,
+            "lon": -0.13294
+        }
+    ]
+}

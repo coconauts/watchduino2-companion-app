@@ -1,0 +1,29 @@
+// App-specific configuration goes here.
+// Top level keys are app identifiers, mapping to a
+// config object specific for each app.
+
+// This file is a sample, with blank values.
+// Copy this file into the "www" folder, and edit
+// with your custom configuration.
+
+var config = {
+  // Twitter app uses http://oauth.io as a proxy to log in.
+  // You'll need an oauth.io account, linked to your twitter.
+  // Then place your key here.
+  twitter: {
+    oauthio_key: "",
+  },
+  // Weather app uses the http://forecast.io api.
+  // You'll need to register as a developer and get
+  // a key on http://developer.forecast.io
+  weather: {
+    forecastio_api_key: ""
+  },
+  // The TFL app uses their api.
+  // Sign up for a key on https://api-portal.tfl.gov.uk
+  tfl: {
+    app_id: "",
+    app_key: "",
+  }
+  // Place you own app config in here!
+};
