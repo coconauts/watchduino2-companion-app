@@ -5,7 +5,6 @@ www/appconfig.js
 platforms/android/assets/www
 platforms/android/bin/
 platforms/android/gen/
-platforms/android/CordovaLib/
 
 # iOS
 platforms/ios/build/
