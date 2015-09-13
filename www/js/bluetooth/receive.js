@@ -30,6 +30,9 @@ var processCommand = function (command, value) {
     case "tw":
           sendTwitterTimeline(value);
           break;
+    case "nt":
+          notification.cancelLast();
+          break;
     case "bt":
           log(TAG, "Battery notification "+value);
           battery.add(value);

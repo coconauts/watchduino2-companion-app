@@ -55,6 +55,6 @@ function Battery(){
     data.addRows(rows);
 
     var chart = new google.visualization.AnnotationChart(document.getElementById('chart_div'));
-    chart.draw(data, {displayAnnotations: true});
+    chart.draw(data, {displayAnnotations: true, dateFormat: "HH:mm:ss", max: 4000, min:3000});
   };
 }

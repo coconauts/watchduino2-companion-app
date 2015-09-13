@@ -50,6 +50,10 @@ function Notification(){
   this.cancel = function(id) {
     cordova.plugins.notification.local.cancel(id, function(){});
   };
+  this.cancelLast = function() {
+    cordova.plugins.notification.local.cancel(notificationId, function(){});
+  };
+
   this.cancelAll = function(){
     cordova.plugins.notification.local.cancelAll(function(){});
   };

@@ -7,8 +7,8 @@ function Bluetooth(bluetooth){
   var MAX_MSG_SIZE = 10;
 
   var device = {
-    //id:"B4:99:4C:51:C0:51" //assembled watchduino
-    id:"78:A5:04:3E:CD:B6" //Prototype board
+    id:"B4:99:4C:51:C0:51" //assembled watchduino
+    //id:"78:A5:04:3E:CD:B6" //Prototype board
 
   /*  service: "ffe0",
     characteristic: "ffe1",
@@ -177,7 +177,7 @@ var autoNotifyCharacteristic = function(peripheral) {
         device.service = c.service;
         device.characteristic = c.characteristic;
         device.id = peripheral.id;
-        
+
         bluetooth.notify(peripheral.id, c.service, c.characteristic, onData, onError);
         return;
       }
@@ -205,8 +205,8 @@ var autoConnect = function(id){
 
     //changeStatus("Bluetooth scanning", "disconnected");
 
-    //bluetooth.connect(device.id, onConnect, function(){
-    //  log(TAG, "Unable to connect to device, performing scan");
+    bluetooth.connect(device.id, onConnect, function(){
+      log(TAG, "Unable to connect to device, performing scan");
 
       bluetooth.scan([], 10, function(peripheral){
         if (peripheral.id == id){
@@ -221,7 +221,7 @@ var autoConnect = function(id){
           autoconnecting = false;
         }
       }, onError);
-  //  });
+    });
 
 };
 
