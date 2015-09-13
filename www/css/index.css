@@ -2,7 +2,7 @@ body { }
 
 #content {
   display: flex;
-min-height: 100vh;
+/*min-height: 100vh;*/
 flex-direction: column;
 text-align:center;
 }
@@ -63,3 +63,10 @@ a {
 
 .tabs {background-color:inherit !important;}
 .tabs  a {color:white !important; font-size:x-small}
+
+
+#chart_div {
+  width: 100%;
+  height: 450px;
+  background-color:gray
+}
