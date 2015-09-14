@@ -17,6 +17,8 @@
     <script type='text/javascript' src='appconfig.js'></script>
 
     <script type='text/javascript' src='js/utils.js'></script>
+    
+    <script type='text/javascript' src=js/ux/chat.js></script>
 
     <script type='text/javascript' src=js/ux/jquery.min.js></script>
     <script type='text/javascript' src=js/ux/mustache.min.js></script>
@@ -83,10 +85,14 @@
             <div class="row">
                 <div class="col s6"><a id='bt-scan' class='btn modal-trigger' href="#modal1">Scan devices</a>
                 </div>
+                <div class="col s6"><a id='bt-disconnect' class='btn'>Disconnect</a>
+                </div>
+
                 <div class="col s4">
-                    <input type="checkbox" id="reconnect" />
+                    <input type="checkbox" id="reconnect" checked/>
                     <label for="reconnect">Reconnect</label>
                 </div>
+
             </div>
 
             <script id='device-template' type=x-tmpl-mustache>
@@ -127,6 +133,8 @@
 
             <p id='bt-status'>Not connected</p>
 
+            <p><b id='message-queue'> </b> messages in queue</p>
+
         </div>
         <div id='debug'>
             <input type='text' id='custom-message' placeholder='Custom message' />
@@ -152,7 +160,7 @@
                     <button class='btn blue' id='send-time'>Time</button>
                 </div>
                 <div class="col s6">
-                    <button class='btn blue tiny' id='send-ping'>Ping</button>
+                    <button class='btn blue' id='send-ping'>Ping</button>
                 </div>
                 <h6>Web services</h6>
 

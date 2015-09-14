@@ -18,13 +18,17 @@
 }
 #chat .time {
   font-size: small;
-  color:black;
-  margin-top: -15px;
+  color:gray;
+  margin: -30px 10px 0px 10px;
+}
+#chat .info .time {
+  margin: -5px;
 }
 #chat .text {
-  border-radius: 50px;
+  border-radius: 10px;
   padding: 5px 10px;
   display: inline-block;
+  margin: 5px;
 }
 
 #chat .send {
@@ -35,9 +39,11 @@
 }
 #chat .send .text {
   background-color: #e8f5e9;
+  padding-left: 60px;
 }
 #chat .receive .text {
   background-color: #fff3e0;
+  padding-right: 60px;
 }
 #chat .error { color: red; }
 #chat .info { color: blue; }
