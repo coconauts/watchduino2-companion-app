@@ -7,8 +7,8 @@ function Bluetooth(bluetooth){
   var MAX_MSG_SIZE = 10;
 
   var device = {
-    id:"B4:99:4C:51:C0:51" //assembled watchduino
-    //id:"78:A5:04:3E:CD:B6" //Prototype board
+    //id:"B4:99:4C:51:C0:51" //assembled watchduino
+    id:"78:A5:04:3E:CD:B6" //Prototype board
 
   /*  service: "ffe0",
     characteristic: "ffe1",
@@ -23,13 +23,12 @@ function Bluetooth(bluetooth){
 
   var messageQueue =[];
   var reconnect = true;
-  var queueSystem = true; //Won't work on background
+  var queueSystem = true;
   var autoconnecting = false;
 
 // ----------------
 // PERIODIC FUNCTIONS (INTERVALS)
 // ----------------
-//Won't work on background
 
   setInterval( function(){
     //log(TAG, "Processing message queue " + messageQueue.length);
@@ -62,10 +61,7 @@ function Bluetooth(bluetooth){
   };
 
   //Sample peripheral data https://github.com/don/cordova-plugin-ble-central#peripheral-data
-  this.isConnected = function(){
-    if (device.status === CONNECTED) bluetooth.isConnected(device.peripheral.id, onSuccess, onError);
-    else log(TAG, "Device status is not connected");
-  };
+
   this.isEnabled = function(){
     bluetooth.isEnabled(onSuccess, onError);
   };
@@ -86,8 +82,6 @@ function Bluetooth(bluetooth){
   this.sendNow = function(msg){
     if (device.status === CONNECTED) {
 
-      this.isSleeping = false;
-
       log(TAG, "Writing bluetooth: "+msg.replace(/\n/g, "\\n"));
       var endChar = "\r";
       var fullMsg =  msg.latinise() +endChar;
@@ -106,11 +100,9 @@ function Bluetooth(bluetooth){
 
   this.disconnect = function(){
 
-    setTimeout(function(){
       ble.disconnect(device.id, onSuccess, onError);
       device.status = DISCONNECTED;
       changeStatus("Manually disconnected", "disconnected");
-    }, 1000);
   }
 
   this.scan = function() {
@@ -205,23 +197,23 @@ var autoConnect = function(id){
 
     //changeStatus("Bluetooth scanning", "disconnected");
 
-    bluetooth.connect(device.id, onConnect, function(){
-      log(TAG, "Unable to connect to device, performing scan");
+    if (messageQueue.length == 0 ) {
+      log(TAG, "No need to connect, message queue 0");
+    } else {
+      log(TAG, "Connecting, with message queue: " + messageQueue.length);
+      bluetooth.connect(device.id, onConnect, function(){
+        log(TAG, "Unable to connect to device, performing scan");
 
-      bluetooth.scan([], 10, function(peripheral){
-        if (peripheral.id == id){
-
-          //var isSleeping = peripheral.name.indexOf('Z') != -1;
-          if (messageQueue.length == 0 ) {
-            log(TAG, "No need to connect, message queue 0");
-          } else {
-            changeStatus("Connecting to "+ peripheral.name + ": " + peripheral.id, "connecting");
-            bluetooth.connect(device.id, onConnect, onDisconnect);
+        bluetooth.scan([], 10, function(peripheral){
+          if (peripheral.id == id){
+            //var isSleeping = peripheral.name.indexOf('Z') != -1;
+              changeStatus("Connecting to "+ peripheral.name + ": " + peripheral.id, "connecting");
+              bluetooth.connect(device.id, onConnect, onDisconnect);
+            autoconnecting = false;
           }
-          autoconnecting = false;
-        }
-      }, onError);
-    });
+        }, onError);
+      });
+    }
 
 };
 
@@ -239,7 +231,7 @@ var autoConnect = function(id){
     bluetooth.writeWithoutResponse(device.peripheral.id, device.service, device.characteristic, bytes, onSuccess, onError);
 
     if (nextMessage.length > 0 )
-    setTimeout(function() { //TODO will this work on BG?
+    setTimeout(function() {
         sendInParts(nextMessage);
     }, 100);
   };
