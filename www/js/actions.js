@@ -30,6 +30,7 @@ var changeStatus = function(message, status){
 
   if (settings.notification) notification.watchduinoStatus(status);
   drawChat("info", status);
+  log("Chat", message +" " + status)
 
   $("#status-bar").removeClass().addClass("row " +status);
   $("#bt-status").html(message);
