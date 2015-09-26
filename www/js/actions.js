@@ -73,7 +73,7 @@ var searchTflStops = function(){
         sendTflArrival(cachedTflStops[0]);
       }
       else {
-        bt.send("!tf:No stops found nearby!");
+        bt.send("!tf:No stops\nfound nearby!");
       }
     });
   });
