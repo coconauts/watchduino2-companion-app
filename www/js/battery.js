@@ -15,6 +15,8 @@ $(document).ready(function() {
     $('#battery-button').click(function(){
       setTimeout(battery.draw, 100);
     });
+    
+    setInterval(battery.draw, 1000);
 });
 
 

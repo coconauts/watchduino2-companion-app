@@ -5,6 +5,7 @@ function Bluetooth(bluetooth){
   var CONNECTED= "connected", DISCONNECTED= "disconnected";
 
   var MAX_MSG_SIZE = 10;
+  var MAX_QUEUE_SIZE = 5;
 
   var device = {
     //id:"B4:99:4C:51:C0:51" //assembled watchduino
@@ -73,7 +74,10 @@ function Bluetooth(bluetooth){
 
     if(queueSystem){
       log(TAG, "Adding message to bluetooth queue: "+msg.replace(/\n/g, "\\n"));
-      messageQueue.push("!db");
+
+      if (messageQueue.length > MAX_QUEUE_SIZE) messageQueue.shift();
+
+      //messageQueue.push("!db");
       messageQueue.push(msg);
       log("Messages in queue ", messageQueue);
     } else this.sendNow(msg);
@@ -84,7 +88,7 @@ function Bluetooth(bluetooth){
 
       log(TAG, "Writing bluetooth: "+msg.replace(/\n/g, "\\n"));
       var endChar = "\r";
-      var fullMsg =  msg.latinise() +endChar;
+      var fullMsg =  endChar +endChar + msg.latinise() +endChar;
 
       drawChat("send", msg);
 
@@ -170,7 +174,10 @@ var autoNotifyCharacteristic = function(peripheral) {
         device.characteristic = c.characteristic;
         device.id = peripheral.id;
 
-        bluetooth.notify(peripheral.id, c.service, c.characteristic, onData, onError);
+        //bluetooth.notify(peripheral.id, c.service, c.characteristic, onData, onError); //deprecated
+
+        bluetooth.stopNotification(peripheral.id, c.service, c.characteristic, onSuccess, onError);
+        bluetooth.startNotification(peripheral.id, c.service, c.characteristic, onData, onError);
         return;
       }
   }
