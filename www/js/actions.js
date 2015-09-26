@@ -4,8 +4,9 @@ var sendTwitterTimeline = function(position){
   if (position && cachedTwitterTimeline.length > position) {
     sendTweet(cachedTwitterTimeline[position]);
   } else {
+    bt.send("!tw:Requesting\ntwitter timeline");
+
     twitter.homeTimeline(function(timeline) {
-        bt.send("!tw:Requesting\ntwitter timeline");
         drawChat("info", "Got " + timeline.length + " tweets from Twitter");
         cachedTwitterTimeline = timeline;
         sendTweet(cachedTwitterTimeline[0]);
@@ -117,7 +118,7 @@ var sendForecast = function(){
         temp + " degrees\n" +
         c.humidity + " hum.\n" +
         c.precipProbability + " precip.";
-        
+
       log("Controls", "Got forecast: "+msg);
       bt.send("!wt:"+msg);
     });
