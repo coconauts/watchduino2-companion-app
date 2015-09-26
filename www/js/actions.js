@@ -5,6 +5,7 @@ var sendTwitterTimeline = function(position){
     sendTweet(cachedTwitterTimeline[position]);
   } else {
     twitter.homeTimeline(function(timeline) {
+        bt.send("!tw:Requesting\ntwitter timeline");
         drawChat("info", "Got " + timeline.length + " tweets from Twitter");
         cachedTwitterTimeline = timeline;
         sendTweet(cachedTwitterTimeline[0]);
@@ -53,11 +54,15 @@ var searchTflStops = function(){
       return;
     }
 
+    bt.send("!tf:Requesting\nnearby stops");
+
     log("Controls","Searching TFL in " + latlon.lat + ","+latlon.lon);
     tfl.stopPoints(latlon.lat, latlon.lon, function(error, json){
       if (error) log("Controls", "Unable to get TFL stops " + error);
 
       drawChat("info", "Got " + json.stopPoints.length + " stops from TFL");
+
+      //bt.send("!tf:Got "+json.stopPoints.length+ " stops nearby");
 
       cachedTflStops = json.stopPoints;
       //log("Controls", "TFL stops " + JSON.stringify(cachedTflStops));
@@ -71,6 +76,9 @@ var searchTflStops = function(){
 };
 
 var sendTflArrival = function(stop){
+
+  bt.send("!tf:Requesting\nstop "+stop.stopLetter);
+
   tfl.arrivals(stop.naptanId, function(error, json) {
     if (error) log(TAG, "Unable to send TFLArrival "+error, "error");
     //log("Controls", "Got " + json.length + " arrivals from TFL");
@@ -97,12 +105,19 @@ var sendForecast = function(){
       return;
     }
 
+    bt.send("!wt:Requesting\nweather");
+
     log("Controls", "Searching forecast in " + latlon.lat + ","+latlon.lon);
     forecast.forecast(latlon.lat, latlon.lon, function(error, json){
       var c = json.currently;
-      var celsius = c.temperature-32;
-      var temp =  parseInt(celsius);//Math.round(celsius * 100) / 100;
-      var msg = c.summary + " "+ temp + " degrees";
+      var celsius = (c.temperature-32 ) / 1.8 ;
+      var temp =  parseInt(celsius);
+
+      var msg = c.summary + "\n"+
+        temp + " degrees\n" +
+        c.humidity + " hum.\n" +
+        c.precipProbability + " precip.";
+        
       log("Controls", "Got forecast: "+msg);
       bt.send("!wt:"+msg);
     });
