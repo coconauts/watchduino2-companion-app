@@ -8,8 +8,8 @@ function Bluetooth(bluetooth){
   var MAX_QUEUE_SIZE = 5;
 
   var device = {
-    //id:"B4:99:4C:51:C0:51" //assembled watchduino
-    id:"78:A5:04:3E:CD:B6" //Prototype board
+    id:"B4:99:4C:51:C0:51" //assembled watchduino
+    //id:"78:A5:04:3E:CD:B6" //Prototype board
 
   /*  service: "ffe0",
     characteristic: "ffe1",
@@ -203,25 +203,19 @@ var autoConnect = function(id){
     }, 10000);
 
     //changeStatus("Bluetooth scanning", "disconnected");
+    log(TAG, "Connecting, with message queue: " + messageQueue.length);
+    bluetooth.connect(device.id, onConnect, function(){
+      log(TAG, "Unable to connect to device, performing scan");
 
-    if (messageQueue.length == 0 ) {
-      log(TAG, "No need to connect, message queue 0");
-    } else {
-      log(TAG, "Connecting, with message queue: " + messageQueue.length);
-      bluetooth.connect(device.id, onConnect, function(){
-        log(TAG, "Unable to connect to device, performing scan");
-
-        bluetooth.scan([], 10, function(peripheral){
-          if (peripheral.id == id){
-            //var isSleeping = peripheral.name.indexOf('Z') != -1;
-              changeStatus("Connecting to "+ peripheral.name + ": " + peripheral.id, "connecting");
-              bluetooth.connect(device.id, onConnect, onDisconnect);
-            autoconnecting = false;
-          }
-        }, onError);
-      });
-    }
-
+      bluetooth.scan([], 10, function(peripheral){
+        if (peripheral.id == id){
+          //var isSleeping = peripheral.name.indexOf('Z') != -1;
+            changeStatus("Connecting to "+ peripheral.name + ": " + peripheral.id, "connecting");
+            bluetooth.connect(device.id, onConnect, onDisconnect);
+          autoconnecting = false;
+        }
+      }, onError);
+    });
 };
 
 // ----------------

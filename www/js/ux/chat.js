@@ -4,6 +4,8 @@ var fillWithZero = function(i) {
   else return i;
 }
 var drawChat = function(type, text) {
+    var MAX_LOG_SIZE = 20;
+
     var date = new Date();
     var time = date.getHours() +":"+ fillWithZero(date.getMinutes())+":"+fillWithZero(date.getSeconds());
     var template = $('#chat-template').html();
@@ -17,7 +19,13 @@ var drawChat = function(type, text) {
 
     var isAtBottom = top + height >= maxHeight;
 
-    $("#chat").append(rendered);
+    $chat.append(rendered);
+    var $chatLog = $chat.find('div');
+
+    if ($chatLog.length > MAX_LOG_SIZE) {
+      var $sliceChat = $chatLog.slice($chatLog.length - MAX_LOG_SIZE);
+      $chat.html($sliceChat);
+    }
 
     //Scroll to bottom of chat
     if (isAtBottom) $chat.scrollTop(maxHeight);
