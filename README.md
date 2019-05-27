@@ -17,9 +17,9 @@ This project is currently a work in progress in a very alpha state, so expect dr
 
 ## Install on Android
 
-We have got no distributable builds at the moment, so the only way to
-install it is to build it yourself. Refer to the
-[building from source document](docs/build.md) for instructions.
+We encourage users to build their own companion app by following this guide [building from source document](docs/build.md) for instructions.
+
+But if you still want to try it out, you can download our APK directly [here](watchduino2.apk)
 
 ## Install on iOS?
 
